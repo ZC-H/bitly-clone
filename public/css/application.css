@@ -1,0 +1,67 @@
+h1 {
+	color: white;
+}
+
+div {
+	color: green;
+}
+
+fieldset {
+	position: relative;
+
+}
+
+.submitbutton {
+	color: #fff;
+  background-color: #ee6123;
+	position: absolute;
+	top: 6;
+	right: 6;
+	border: 0;
+	height: 44px;
+	width: 100px;
+}
+
+#urlbox {
+	width: 100%;
+	border-radius: 3px;
+	height:30px;
+	padding: 20px;
+}
+
+.greytext {
+	font-size: -50%;
+	color: green;
+	margin: 0;
+
+}
+.urltext {
+	background-color: #CDF173;
+	margin-top: 8;
+	margin-bottom: 8;
+	height:30px ;
+	line-height: 30px;
+}
+
+body {
+	background-color: grey;
+}
+
+.catback {
+	height: 300px;
+  background-image: url("/img/CatBG.png");
+  background-repeat: no-repeat;
+  background-color: grey;
+  background-position-x: center;
+  background-position-y: top;
+  background-size: cover;
+  margin: 0;
+
+}
+
+#recenturls {
+	background-color: white;
+	border-radius: 5px;
+	width: 70%;
+	margin: auto;
+}

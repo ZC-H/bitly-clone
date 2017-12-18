@@ -1,2 +1,31 @@
-<h1>Hello World</h1>
-<p>See Me in views/static/index.html.erb</p>
+<div class="catback">
+<h1>Cat.ly</h1>
+
+<center>
+<% if rand(2) == 0 %>
+<h1>Link Truncating Service</h1>
+<% else %>
+<h1>Catify Your Links</h1>
+<% end %>
+</center>
+
+<form method="POST" action="/urls" id="urlform">
+	<fieldset>
+	  <input type="text" name="long_url" placeholder="Enter URL to shorten" id="urlbox">
+	  <input type="submit" value="Submit" class="submitbutton">
+	</fieldset>
+</form>
+</div>
+<br><br>
+<table id="recenturls">
+	<caption><h1>Recent URLs</h1></caption>
+  <tr>
+  	<th>Original</th><th>Short</th><th>Clicked</th>
+  </tr>
+  <% Url.last(5).reverse.each do |u| %>
+  <tr>
+  <th class="urltext"><%= u.origurl %></th> <th class="greytext"><%= '/' + u.biturl %></th><th> <%= u.clicked %></th></tr>
+  <% end %>
+</table>
+
+<button type="button" id="testbutton">Debug button</button>
